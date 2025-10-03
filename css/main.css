@@ -1,0 +1,147 @@
+@import 
+
+
+
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1C1C1C;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --white: #fff;
+    --purple: #6943FF;
+    --inputBorderColor: #B295FF;
+    --btnTextColor: #3D3D3D;
+    --lightPurple: #CCC1FF;
+    --outputFieldSectionColor: #1F2937;
+    --outputFieldContainerColor: #273549;
+    
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.conversion-card{
+    max-width: 34.375rem;
+    width: 100%;
+    overflow: auto;
+}
+
+
+.conversion-card__heading{
+    
+    display: flex;
+    flex-direction: column;
+    padding: 0 51px 30px;
+    background: var(--purple) ;
+    border-radius: 10px 10px 0 0 ;
+    
+}
+
+
+.conversion-card__title{
+    color: var(--white);
+    font-size: 1.75rem;
+    text-align: center;
+    margin-top: 33px;
+    font-size: clamp(1rem, 8vw, 1.75rem);
+}
+
+.conversion-card__inputNum{
+    border: 1px solid var(--inputBorderColor);
+    border-radius: 5px;
+    width: 100%;
+    max-width: 7rem;
+     min-width: 0;
+    margin: auto;
+    font-size: clamp(2rem, 4vw, 3.625rem);
+    text-align: center;
+    background: transparent;
+    color: var(--white);
+    font-weight: bolder;
+     margin-top: 30px;
+
+}
+
+.conversion-card__convertBtn{
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 7rem;
+    margin: auto;
+    color: var(--btnTextColor);
+    padding: 9px 27px;
+    text-transform: capitalize;
+   margin-top: 30px;
+}
+
+.conversion-card__convertBtn:hover{
+    box-shadow: 0 0 5px var(--inputBorderColor);
+    transform: scale(1.1);
+}
+
+.conversion-card__outputField{
+    background-color: var(--outputFieldSectionColor);
+    border-radius: 0 0 10px 10px ;
+    padding: 0.1px 25px 10px;
+    text-align: center;
+}
+
+h2 {
+    color: var(--lightPurple);
+    font-size: clamp(0.5rem, 5vw, 1.25rem);
+}
+
+.conversion-card__outputField div {
+    max-width: 31.25rem;
+    background-color: var(--outputFieldContainerColor);
+    margin: 28px auto;
+    border-radius: 5px;
+    padding: 31px 77px 19px;
+    
+}
+
+.conversion-card__outputField p{
+    margin-top: 9px;
+}
+
+
+@media screen and (max-width: 375px){
+
+    .conversion-card__outputField div{
+    padding: 20px 0;
+    overflow-wrap: anywhere;
+    width: 100%;
+} 
+
+.conversion-card__heading,
+.conversion-card__outputField{
+    overflow-wrap: anywhere;
+    min-height: 50vh;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.conversion-card__heading{
+    padding: 50px 0 0;
+
+}
+   .conversion-card__convertBtn{
+    max-width: 70%;
+   }
+}
