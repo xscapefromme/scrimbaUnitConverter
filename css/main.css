@@ -135,10 +135,13 @@ h2 {
     justify-content: space-evenly;
 }
 .conversion-card__heading{
-    padding: 50px 0 0;
+    padding: 20px 0 0;
 
 }
    .conversion-card__convertBtn{
     max-width: 70%;
+   }
+   .conversion-card__outputField div{
+    margin: 0px;
    }
 }
