@@ -65,7 +65,7 @@ main {
     max-width: 7rem;
      min-width: 0;
     margin: auto;
-    font-size: clamp(2rem, 4vw, 3.625rem);
+    font-size: clamp(2rem, 4vw, 2.2rem);
     text-align: center;
     background: transparent;
     color: var(--white);
@@ -123,6 +123,7 @@ h2 {
     padding: 20px 0;
     overflow-wrap: anywhere;
     width: 100%;
+    margin: 0;
 } 
 
 .conversion-card__heading,
@@ -140,8 +141,9 @@ h2 {
 }
    .conversion-card__convertBtn{
     max-width: 70%;
+    margin: 0 auto;
    }
-   .conversion-card__outputField div{
-    margin: 0px;
+   .conversion-card__inputNum{
+    margin: 10px auto;
    }
 }
