@@ -23,22 +23,22 @@
     <article class="conversion-card">
         <section class="conversion-card__heading">
         <h1 class="conversion-card__title">Metric/Imperial Unit Converter</h1>
-        <input type="number" class="conversion-card__inputNum" placeholder="add #"
-        >
+        <input type="number" id="conversion-card__inputNum" placeholder="add #"
+        min="1">
         <button type="button" class="conversion-card__convertBtn">convert</button>
         </section>
         <section class="conversion-card__outputField">
             <div class="conversion-card__lengthContainer">
                 <h2>Length (Meter/Feet)</h2>
-                <p id="lengthLine"></p>
+                <p id="lengthLine">please enter a number</p>
             </div>
             <div class="conversion-card__volumeContainer">
                 <h2>Volume (Liters/Gallons)</h2> 
-                <p id="volumeLine"></p>  
+                <p id="volumeLine">please enter a number</p>  
             </div>
             <div class="conversion-card__massContainer">
                     <h2>Mass (Kilograms/Pounds)</h2>
-                    <p id="massLine"></p>
+                    <p id="massLine">please enter a number</p>
             </div>
         </section>
     </article>

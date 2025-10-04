@@ -58,7 +58,7 @@ main {
     font-size: clamp(1rem, 8vw, 1.75rem);
 }
 
-.conversion-card__inputNum{
+#conversion-card__inputNum{
     border: 1px solid var(--inputBorderColor);
     border-radius: 5px;
     width: 100%;
@@ -71,7 +71,7 @@ main {
     color: var(--white);
     font-weight: bolder;
      margin-top: 30px;
-
+    padding: 10px 0;
 }
 
 .conversion-card__convertBtn{
@@ -103,12 +103,17 @@ h2 {
     font-size: clamp(0.5rem, 5vw, 1.25rem);
 }
 
+p{
+    color: var(--white);
+    font-size: .8rem;
+}
+
 .conversion-card__outputField div {
     max-width: 31.25rem;
     background-color: var(--outputFieldContainerColor);
     margin: 28px auto;
     border-radius: 5px;
-    padding: 31px 77px 19px;
+    padding: 20px 77px 20px;
     
 }
 
@@ -143,7 +148,7 @@ h2 {
     max-width: 70%;
     margin: 0 auto;
    }
-   .conversion-card__inputNum{
+   #conversion-card__inputNum{
     margin: 10px auto;
    }
 }
